@@ -1,0 +1,8 @@
+<h3>以下の内容で、投稿する。</h3>
+
+<%= form_with(model: @tweet, url: tweets_path, local: true) do |form| %>
+  <%= form.hidden_field :content %>
+
+  <p>本文:<%= @tweet.content %></p>
+  <%= form.submit  "投稿する" %>
+<% end %>
