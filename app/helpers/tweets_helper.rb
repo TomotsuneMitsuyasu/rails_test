@@ -3,7 +3,7 @@ module TweetsHelper
       if action_name == 'new' ||action_name =='confirm'
         confirm_tweets_path
       elsif action_name == 'edit'
-        tweets_path
+        tweet_path
       end
     end
 end

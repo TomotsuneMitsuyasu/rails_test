@@ -7,7 +7,7 @@ class TweetsController < ApplicationController
 
      def new
        if params[:back]
-         @tweet = Tweet.new(blog_params)
+         @tweet = Tweet.new(tweet_params)
        else
          @tweet = Tweet.new
        end
@@ -46,6 +46,7 @@ class TweetsController < ApplicationController
 
      def confirm 
        @tweet = Tweet.new(tweet_params)
+       render :new if @tweet.invalid?
      end
 
      private
