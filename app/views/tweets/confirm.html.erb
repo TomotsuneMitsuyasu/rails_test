@@ -6,3 +6,9 @@
   <p>本文:<%= @tweet.content %></p>
   <%= form.submit  "投稿する" %>
 <% end %>
+
+
+<%= form_with(model: @tweet, url: new_tweet_path, local: true, method: 'get') do |form| %>
+  <%= form.hidden_field :content %>
+  <%= form.submit "戻る" ,'back' %>
+<% end %>

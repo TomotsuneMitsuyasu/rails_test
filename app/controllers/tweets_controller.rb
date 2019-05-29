@@ -6,7 +6,11 @@ class TweetsController < ApplicationController
      end
 
      def new
-       @tweet = Tweet.new
+       if params[:back]
+         @tweet = Tweet.new(blog_params)
+       else
+         @tweet = Tweet.new
+       end
      end
 
      def create

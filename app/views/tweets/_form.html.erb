@@ -1,4 +1,8 @@
-<%= form_with(model: @tweet, local: true ,url:confirm_tweets_path) do |form| %>
+<%= form_with(model: @tweet, local: true ,url:choose_new_or_edit ) do |form| %>
+
+
+
+
   <% if tweet.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(tweet.errors.count, "error") %> prohibited this tweet from being saved:</h2>
