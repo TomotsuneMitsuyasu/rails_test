@@ -2,18 +2,13 @@
 <html>
 
   <head> 
-  
-  
-  <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Tsubuyaki</title>
-    
     <%= stylesheet_link_tag "application", media: "all" %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-
     <!-- <link rel="stylesheet" href="../../assets/stylesheets/tweets.scss"> -->
     <!-- <link rel="stylesheet" href="vendors/css/.css"> -->
-  
   </head>
 
   <body>
@@ -24,11 +19,11 @@
       </div>
     </nav>
   </header>
-    <%= yield %>
+  <%= yield %>
     
-  <footer class="footer">
-    <p>Tsubuyaki株式会社 <br>
-        © 2015-2018 Copyright Tsubuyaki Corp.</p>
-  </footer>
+    <footer class="footer">
+     <p>Tsubuyaki株式会社 <br>
+      © 2015-2018 Copyright Tsubuyaki Corp.</p>
+    </footer>
   </body>
 </html>
